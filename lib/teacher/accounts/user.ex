@@ -21,11 +21,13 @@ defmodule Teacher.Accounts.User do
   end
 end
 
+
 defimpl FunWithFlags.Actor, for: Teacher.Accounts.User do
   def id(%Teacher.Accounts.User{username: username}) do
     "user:#{username}"
   end
 end
+
 
 defimpl FunWithFlags.Group, for: Teacher.Accounts.User do
   def in?(%Teacher.Accounts.User{admin: admin}, :admin) do
