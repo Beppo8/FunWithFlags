@@ -43,6 +43,7 @@ defmodule Teacher.Mixfile do
       {:comeonin, "~> 4.0"},
       {:bcrypt_elixir, "~> 1.0"},
       {:fun_with_flags, "~> 1.6"},
+      {:fun_with_flags_ui, "~> 0.7.2"},
       {:cowboy, "~> 1.0"}
     ]
   end

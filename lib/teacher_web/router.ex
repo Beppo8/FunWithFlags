@@ -18,7 +18,7 @@ defmodule TeacherWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope path: "/feature-flags" do
+  scope path: "/feature_flags" do
     pipe_through :flag_ui
     forward "/", FunWithFlags.UI.Router, namespace: "feature-flags"
   end
